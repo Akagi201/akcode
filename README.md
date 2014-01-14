@@ -1,4 +1,7 @@
 akcode
 ======
 
-my codes during my working and studying
+我平时工作和学习过程中, 积累的一些零散的代码. 多半是一些测试语法和一些简单的小程序.
+
+慢慢积累~~
+

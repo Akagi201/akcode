@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>iView</title>
+
+<SCRIPT>
+function workaround()
+{
+window.document.all.item("ocx").style.display = "none"
+window.document.all.item("ocx").style.display = ""
+}
+</SCRIPT>
+
+</head>
+
+<form name=activex ><WINDWEB_URL>
+<input type=hidden name=url>
+
+</form>
+
+<body  topmargin="0" leftmargin="0" onscroll="workaround();" bgcolor="#294552">
+<div align="center">
+  <table border="0" cellspacing="0" cellpadding="0" id = "table">
+  <tr>
+    <td bgcolor="#294552" valign="top" colspan="2">
+
+<object classid="clsid:7B43048F-DA7A-458F-AF35-D825BDBB6816" codebase="./NetVideoOCX.cab#version=2,2,9,1"
+  standby="Waiting..." id="NetOCX" name="ocx" align="top">
+
+</object>
+<script language="javascript">
+//document.activex.url.value="172.6.114.6"
+document.activex.url.value=document.URL
+var OCXobj = document.getElementById("NetOCX");
+OCXobj.SetServerIP(activex.url.value)
+if (screen.width<=800) 
+{
+    table.width=1004;
+    table.height=600;
+    NetOCX.width=1004;
+	NetOCX.height=600;
+} 
+else
+{
+    table.width=screen.width - 22;
+	table.height=screen.height - 166;
+    NetOCX.width=screen.width - 22;
+	NetOCX.height=screen.height - 166;
+}
+				
+
+</script>
+    </td>
+  </tr>
+  <center>
+  </table>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,4 @@
+VAR="Hello"
+
+all:
+	echo "$VAR"

@@ -1,0 +1,12 @@
+all:
+	CROSS_COMPILE=mipsel-linux-
+	echo $(CROSS_COMPILE)
+#@CROSS_COMPILE=mipsel-linux-; echo @echo $(CROSS_COMPILE)
+	CROSS_COMPILE=mipsel-linux-; \
+	echo $(CROSS_COMPILE)
+
+	cd /home/akagi201
+	pwd
+
+	cd /home/akagi201; \
+		pwd

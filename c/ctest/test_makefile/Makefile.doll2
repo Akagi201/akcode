@@ -1,0 +1,5 @@
+PATH="/data/"
+
+all:
+	echo ${PATH}
+	echo $$PATH

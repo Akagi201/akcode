@@ -1,0 +1,6 @@
+	#echo 1
+	#@echo "Building all..."
+
+all:
+	echo 1
+	@echo "Begin"

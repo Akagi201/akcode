@@ -1,0 +1,5 @@
+all:
+	PWD=`pwd`
+	echo ${PWD}
+	PWD=$(shell pwd)
+	echo ${PWD}

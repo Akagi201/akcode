@@ -1,0 +1,6 @@
+DIRS = src bin lib
+all:
+	@for i in $(DIRS); \
+		do \
+		echo " " $$i; \
+		done
