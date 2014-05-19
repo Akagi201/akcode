@@ -60,6 +60,8 @@ test "abc" = "def"; echo $?
 # -nt: 测试file1是否比file2更新, 修改日期将用于这次和下次比较.
 # -ot: 测试file1是否比file2旧.
 # -ef: 测试file1是不是file2的硬链接.
+# man test, 查看更多选项
+
 
 
 
