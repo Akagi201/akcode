@@ -1,44 +1,40 @@
-      
 /** @file getopt3.c
-  * @note HangZhou Hikvision Digital Technology Co., Ltd. All Right Reserved.
-  * @brief    ¸Ä±ägetopt()¶Ô´íÎóÃüÁîĞĞ²ÎÊıĞÅÏ¢µÄÊä³öĞĞÎª
-  * 
-  * @author   liuboyf1
-  * @date     2012-10-12
-  * @version  V1.0.0
-  * 
-  * @note ///Description here 
-  * @note History:    
-  * @note     <author>   <time>    <version >   <desc>
-  * @note  
-  * @warning  
-  */
+ * @brief    æ”¹å˜getopt()å¯¹é”™è¯¯å‘½ä»¤è¡Œå‚æ•°ä¿¡æ¯çš„è¾“å‡ºè¡Œä¸º
+ *
+ * @author   liuboyf1
+ * @date     2012-10-12
+ * @version  V1.0.0
+ *
+ * @note ///Description here
+ * @note History:
+ * @note     <author>   <time>    <version >   <desc>
+ * @note
+ * @warning
+ */
+
 #include <stdio.h>
 #include <unistd.h>
 
-int main (int argc, char **argv)
-{
-    int oc; /*Ñ¡Ïî×Ö·û */
-    char *b_opt_arg; /*Ñ¡Ïî²ÎÊı×Ö´® */
-    while((oc = getopt(argc, argv, "ngl:")) != -1)
-    {
-        switch(oc)
-        {
-        case 'n':
-            printf("new.\n");
-            break;
-        case 'g':
-            printf("great.\n");
-            break;
-        case 'l':
-            b_opt_arg = optarg;
-            printf("l is %s\n", b_opt_arg);
-            break;
-        case '?':
-            printf("arguments error!\n");
-            break;
-        }
-    }
-    return 0;
+int main(int argc, char **argv) {
+	int oc; /*é€‰é¡¹å­—ç¬¦ */
+	char *b_opt_arg; /*é€‰é¡¹å‚æ•°å­—ä¸² */
+	while ((oc = getopt(argc, argv, "ngl:")) != -1) {
+		switch (oc) {
+		case 'n':
+			printf("new.\n");
+			break;
+		case 'g':
+			printf("great.\n");
+			break;
+		case 'l':
+			b_opt_arg = optarg;
+			printf("l is %s\n", b_opt_arg);
+			break;
+		case '?':
+			printf("arguments error!\n");
+			break;
+		}
+	}
+	return 0;
 }
 
