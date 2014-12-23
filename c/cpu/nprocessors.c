@@ -4,6 +4,7 @@
  * @date 2014/12/23
  * _SC_NPROCESSORS_CONF: The number of processors configured.
  * _SC_NPROCESSORS_ONLN: The number of processors currently online (available).
+ * linux: cat /proc/cpuinfo | grep processor | wc -l
  */
 
 #include <stdio.h>
